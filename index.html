@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Tree Generator</title>
+    
+    <meta name="theme-color" content="#ffffff">
+    <!--end favicon metadata-->
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  <body>
+
+    <div class="contact-section">
+        <div class="inner-width">
+            <h1>Syntax Tree Generator</h1>
+            <div class="inner-input-container" style="text-align: left;">
+                <span>Current Expression:</span>
+                <input type="text" class="name" id='expression-input' placeholder="e.g (x + y)*z - (t / w)">
+            </div>
+
+            <div class="buttons">
+                <button id="generate-tree">Generate</button>
+                <button id="clear-tree">Clear</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="canvas-container">
+        <canvas></canvas>
+    </div>
+
+   
+  </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.1/math.min.js"></script>
+    <script src="tree.js"></script>
+    <script src="infixToPostfix.js"></script>
+    <script src="script.js"></script>
+
+</html>
